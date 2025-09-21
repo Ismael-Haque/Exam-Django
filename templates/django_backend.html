@@ -1,0 +1,13 @@
+<h1>Django backend</h1>
+<a href="{% url 'home' %}">Home</a> |
+<a href="{% url 'table' %}">Deep Learning Table</a> |
+<a href="{% url 'machine_learning' %}">Machine Learning</a>
+<hr>
+{% if name == "ismael" %}
+    <p>name: {{ name }}</p>
+{% endif %}
+{% if age > 18 %}
+    <p>age: {{ age }}. So you are a voter</p>
+{% else %}
+    <p>age: {{ age }}. So you are not a voter</p>
+{% endif %}
